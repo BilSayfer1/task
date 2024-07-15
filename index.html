@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+
+  <div class="content">
+      <div class="header">
+          <h1>desk</h1>
+          <button id="createTaskBtn">Создать</button>
+      </div>
+      <div class="board">
+          <div class="column" id="todo">
+              <div class="column-header">go home</div>
+          </div>
+          <div class="column" id="inProgress">
+              <div class="column-header">В процессе</div>
+          </div>
+          <div class="column" id="completed">
+              <div class="column-header">Готово</div>
+          </div>
+      </div>
+  </div>
+
+  <div id="taskModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="taskForm">
+              <label for="title">Title:</label>
+              <input type="text" id="title" name="title" required>
+              <label for="description">Description:</label>
+              <input type="text" id="description" name="description" required>
+              <button class="create" type="submit">Создать</button>
+          </form>
+      </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>
